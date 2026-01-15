@@ -12,13 +12,16 @@ export function Button({
   variant = 'primary',
   size = 'md',
   className,
+  style,
+  disabled,
   ...props
 }: ButtonProps) {
   const baseStyle = {
     fontFamily: 'var(--font-body)',
     borderRadius: '4px',
-    cursor: 'pointer',
+    cursor: disabled ? 'not-allowed' : 'pointer',
     transition: 'all 0.2s',
+    opacity: disabled ? 0.5 : 1,
   };
 
   const variantStyles = {
@@ -58,17 +61,17 @@ export function Button({
     <>
       <style>
         {`
-          .button.button-primary:hover {
+          .button.button-primary:hover:not(:disabled) {
             background-color: #fff !important;
             color: #000 !important;
             border-color: #000 !important;
           }
-          .button.button-secondary:hover {
+          .button.button-secondary:hover:not(:disabled) {
             background-color: #000 !important;
             color: #fff !important;
             border-color: #000 !important;
           }
-          .button.button-outline:hover {
+          .button.button-outline:hover:not(:disabled) {
             background-color: #000 !important;
             color: #fff !important;
             border-color: #000 !important;
@@ -81,7 +84,9 @@ export function Button({
           ...baseStyle,
           ...variantStyles[variant],
           ...sizeStyles[size],
+          ...style,
         }}
+        disabled={disabled}
         {...props}
       >
         {children}

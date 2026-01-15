@@ -8,7 +8,7 @@ export function HomePage() {
   return (
     <div
       style={{
-        minHeight: '100vh',
+        minHeight: '100dvh',
         display: 'flex',
         flexDirection: 'column',
         alignItems: 'center',
@@ -23,8 +23,8 @@ export function HomePage() {
           position: 'fixed',
           top: 0,
           left: 0,
-          width: '100vw',
-          height: '100vh',
+          width: '100dvw',
+          height: '100dvh',
           zIndex: 0,
           overflow: 'hidden',
           backgroundColor: '#000066',
@@ -45,7 +45,7 @@ export function HomePage() {
         style={{
           fontFamily: 'var(--font-heading)',
           fontSize: '4.5rem',
-          marginBottom: '0',
+          marginBottom: '0.4rem',
           fontWeight: 'normal',
           letterSpacing: '-0.05em',
           textTransform: 'uppercase',
@@ -54,6 +54,7 @@ export function HomePage() {
           zIndex: 1,
           textShadow: '0 0 50px #000000',
           transform: 'scaleY(1.15)',
+          lineHeight: '0.9',
         }}
       >
         You Are Here <br/>
@@ -84,7 +85,7 @@ export function HomePage() {
           zIndex: 1,
         }}
       >
-        <Button size="md" onClick={() => navigate('/test')}>
+        <Button size="md" onClick={() => navigate('/introduction')}>
           &#62; Take Test
         </Button>
         <Button size="md" variant="outline" onClick={() => navigate('/resources')}>

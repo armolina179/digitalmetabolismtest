@@ -5,7 +5,6 @@ import { IntroductionPage } from '../pages/Introduction/IntroductionPage';
 import { TestPage } from '../pages/Test/TestPage';
 import { ResultsPage } from '../pages/Results/ResultsPage';
 import { ResourcesPage } from '../pages/Resources/ResourcesPage';
-import { SurveyPage } from '../pages/Survey/SurveyPage';
 
 export const router = createBrowserRouter([
   {
@@ -31,10 +30,6 @@ export const router = createBrowserRouter([
       {
         path: 'resources',
         element: <ResourcesPage />,
-      },
-      {
-        path: 'survey',
-        element: <SurveyPage />,
       },
     ],
   },
