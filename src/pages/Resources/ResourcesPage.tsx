@@ -1,6 +1,8 @@
 import { Button } from "../../components/ui/Button";
+import { useNavigate } from 'react-router-dom';
 
 export function ResourcesPage() {
+  const navigate = useNavigate();
   return (
     <div style={{ padding: '2rem', maxWidth: '800px', margin: '0 auto' }}>
       <blockquote
@@ -100,7 +102,7 @@ export function ResourcesPage() {
             Rather than offering right or wrong answers, the test encourages curiosity and awareness, asking participants to consider their place within a shared digital ecosystem. You are here.
           </p>
         </div>
-        <div style={{ display: 'flex', justifyContent: 'space-between', marginTop: '1.5rem' }}>
+        <div style={{ display: 'flex', justifyContent: 'space-between', marginTop: '1.5rem'}}>
           <Button
             variant="outline"
             style={{ padding: '0.5rem 3rem' }}
@@ -110,7 +112,7 @@ export function ResourcesPage() {
           </Button>
           <Button
             style={{ padding: '0.5rem 3rem' }}
-            onClick={() => navigate('/introduction')}
+            onClick={() => navigate('/test')}
           >
             &#62; Take the Test
           </Button>
