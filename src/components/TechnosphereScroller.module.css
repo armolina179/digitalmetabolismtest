@@ -62,18 +62,28 @@
     [captionAreaBottom] minmax(0, auto);
   gap: 0;
   align-content: start;
-  max-height: 80dvh;
+  max-height: 85dvh;
+  overflow-y: auto;
 }
 
 /* Caption areas */
 .captionArea {
   display: flex;
-  align-items: flex-end;
-  padding: 1rem;
+  padding: 0.5rem 1rem;
   overflow: hidden;
   opacity: 0;
   margin: 0;
   transition: opacity 0.3s ease-in-out;
+}
+
+.captionTop {
+  grid-row: captionAreaTop;
+  align-items: flex-start;
+}
+
+.captionBottom {
+  grid-row: captionAreaBottom;
+  align-items: flex-end;
 }
 
 .captionArea.active {
@@ -81,13 +91,6 @@
   transition: opacity 0.3s ease-in-out;
 }
 
-.captionTop {
-  grid-row: captionAreaTop;
-}
-
-.captionBottom {
-  grid-row: captionAreaBottom;
-}
 
 .captionText {
   font-family: var(--font-body);

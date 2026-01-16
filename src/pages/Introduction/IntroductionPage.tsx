@@ -10,20 +10,20 @@ export function IntroductionPage() {
         {`
           @media (max-width: 768px) {
             .intro-container {
-              padding: 2rem 1rem !important;
+              padding: 2rem 1rem;
             }
             .intro-title {
-              font-size: 1.5rem !important;
+              font-size: 1.5rem;
             }
             .intro-content {
-              padding: 0 !important;
+              padding: 0;
             }
           }
         `}
       </style>
       <div className="intro-container" style={{ padding: '5rem', maxWidth: '62.5rem', margin: '0 auto' }}>
         <div className="intro-content" style={{ fontFamily: 'var(--font-body)', lineHeight: '1.6' }}>
-          <h1 className="intro-title" style={{ fontFamily: 'var(--font-heading)', marginBottom: '2rem', textTransform: 'uppercase' }}>
+          <h1 className="intro-title" style={{ fontFamily: 'var(--font-heading)', marginBottom: '1rem', textTransform: 'uppercase' }}>
             Disclaimer
           </h1>
         <p>

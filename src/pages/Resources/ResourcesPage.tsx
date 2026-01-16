@@ -94,18 +94,25 @@ export function ResourcesPage() {
           </p>
         </div>
       </section>
-      <h2
+      <section>
+        <h2
           className="resources-section-title"
           style={{
             fontFamily: 'var(--font-heading)',
             fontSize: '1.75rem',
+            marginBottom: '1rem',
             textTransform: 'uppercase',
-            maxWidth: '50rem',
             textAlign: 'right',
           }}
         >
           The Technosphere
         </h2>
+        <div style={{ fontFamily: 'var(--font-body)', lineHeight: '1.6', fontSize: '0.875rem'}}>
+          <p style={{ marginBottom: '1.5rem', textAlign: 'right', color: '#808080', fontStyle: 'italic' }}>
+            Hover over the images to see the extended captions.
+          </p>
+        </div>
+      </section>
       </div>
 
 

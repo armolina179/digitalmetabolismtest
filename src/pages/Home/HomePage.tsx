@@ -76,7 +76,8 @@ export function HomePage() {
         className="home-subtitle"
         style={{ 
           fontFamily: 'var(--font-body)', 
-          fontSize: '1.75rem', 
+          marginTop: '0.5rem',
+          fontSize: '2rem', 
           marginBottom: '1rem', 
           fontWeight: 'normal', 
           letterSpacing: '-0.05em', 
