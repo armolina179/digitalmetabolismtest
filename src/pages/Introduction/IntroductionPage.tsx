@@ -10,13 +10,13 @@ export function IntroductionPage() {
         {`
           @media (max-width: 768px) {
             .intro-container {
-              padding: 2rem 1rem;
+              padding: 2rem 1rem !important;
             }
             .intro-title {
-              font-size: 1.5rem;
+              font-size: 1.5rem !important;
             }
             .intro-content {
-              padding: 0;
+              padding: 0 !important;
             }
           }
         `}

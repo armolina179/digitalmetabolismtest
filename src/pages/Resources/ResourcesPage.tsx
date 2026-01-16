@@ -12,6 +12,12 @@ export function ResourcesPage() {
             .resources-section-title {
               font-size: 1.25rem !important;
             }
+
+            .button {
+              font-size: 1rem !important;
+              padding: 0.5rem 1rem !important;
+              width: 100% !important;
+            }
           }
         `}
       </style>
@@ -109,7 +115,7 @@ export function ResourcesPage() {
         </h2>
         <div style={{ fontFamily: 'var(--font-body)', lineHeight: '1.6', fontSize: '0.875rem'}}>
           <p style={{ marginBottom: '1.5rem', textAlign: 'right', color: '#808080', fontStyle: 'italic' }}>
-            Hover over the images to see the extended captions.
+            (Hover over the images to see the extended captions) <br/>(Scroll down to see the full collage)
           </p>
         </div>
       </section>
@@ -143,6 +149,7 @@ export function ResourcesPage() {
         </div>
         <div style={{ display: 'flex', justifyContent: 'space-between', marginTop: '2rem'}}>
           <Button
+            className="button"
             variant="outline"
             style={{ padding: '0.5rem 3rem' }}
             onClick={() => navigate('/')}
@@ -150,6 +157,7 @@ export function ResourcesPage() {
             &#60; Home
           </Button>
           <Button
+            className="button"
             style={{ padding: '0.5rem 3rem' }}
             onClick={() => navigate('/introduction')}
           >
