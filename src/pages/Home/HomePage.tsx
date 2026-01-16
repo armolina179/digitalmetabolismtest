@@ -44,7 +44,7 @@ export function HomePage() {
       <h1
         style={{
           fontFamily: 'var(--font-heading)',
-          fontSize: '4.5rem',
+          fontSize: '4rem',
           marginBottom: '0.4rem',
           fontWeight: 'normal',
           letterSpacing: '-0.05em',
@@ -52,7 +52,7 @@ export function HomePage() {
           color: '#ffffff',
           position: 'relative',
           zIndex: 1,
-          textShadow: '0 0 50px #000000',
+          textShadow: '0 0 3.125rem #000000',
           transform: 'scaleY(1.15)',
           lineHeight: '0.9',
         }}
@@ -70,7 +70,7 @@ export function HomePage() {
           color: '#ffffff', 
           position: 'relative', 
           zIndex: 1, 
-          textShadow: '3px 3px 100px rgba(0, 0, 0, 0.5)' 
+          textShadow: '0.1875rem 0.1875rem 6.25rem rgba(0, 0, 0, 0.5)' 
           }}
       >
         Locating Yourself in the Digital Metabolism
@@ -108,8 +108,8 @@ export function HomePage() {
             fontFamily: 'var(--font-body)',
             fontSize: '0.75rem',
             padding: '0.25rem 1rem',
-            border: '1px solid #fff',
-            borderRadius: '4px',
+            border: '0.0625rem solid #fff',
+            borderRadius: '0.25rem',
             backgroundColor: '#000000',
             color: '#fff',
             textDecoration: 'none',

@@ -14,9 +14,9 @@ export function Progress({ value, max = 100, className, ...props }: ProgressProp
       className={cn('progress', className)}
       style={{
         width: '100%',
-        height: '8px',
+        height: '0.5rem',
         backgroundColor: '#e0e0e0',
-        borderRadius: '4px',
+        borderRadius: '0.25rem',
         overflow: 'hidden',
       }}
       {...props}

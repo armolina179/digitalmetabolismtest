@@ -10,8 +10,8 @@ export function Card({ children, className, ...props }: CardProps) {
     <div
       className={cn('card', className)}
       style={{
-        border: '1px solid #e0e0e0',
-        borderRadius: '8px',
+        border: '0.0625rem solid #e0e0e0',
+        borderRadius: '0.5rem',
         padding: '1.5rem',
         backgroundColor: '#fff',
       }}

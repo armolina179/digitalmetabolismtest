@@ -30,7 +30,7 @@ export function CircularProgress({
         alignItems: 'center',
         justifyContent: 'center',
         backgroundColor: '#fff',
-        borderRadius: '999px',
+        borderRadius: '62.4375rem',
         padding: '1rem 0.5rem',
         transition: 'all 0.2s ease',
         cursor: 'pointer',
@@ -74,8 +74,9 @@ export function CircularProgress({
         style={{
           position: 'relative',
           zIndex: 1,
-          fontFamily: 'var(--font-heading)',
-          fontSize: '1.5rem',
+          fontFamily: 'var(--font-body)',
+          fontSize: '1rem',
+          fontWeight: 'bold',
           textAlign: 'center',
         }}
       >

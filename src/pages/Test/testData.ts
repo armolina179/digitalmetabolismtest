@@ -68,7 +68,7 @@ export const testSections: Section[] = [
       },
       {
         id: 'node-6',
-        text: 'When you think about what your phone is made of, what feels closest?',
+        text: 'When you think about what your phone is made of, which answer feels closest?',
         answers: [
           { id: 'node-6-a', text: 'Probably more toxic materials than I want to know.' },
           { id: 'node-6-b', text: 'I have no idea.' },

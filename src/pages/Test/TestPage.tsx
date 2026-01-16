@@ -42,16 +42,16 @@ export function TestPage() {
   };
 
   return (
-    <div style={{ padding: '2rem', maxWidth: '900px', margin: '0 auto', position: 'relative' }}>
+    <div style={{ padding: '2rem', maxWidth: '56.25rem', margin: '0 auto', position: 'relative' }}>
       <style>
         {`
           input[type="radio"] {
             appearance: none;
             -webkit-appearance: none;
             -moz-appearance: none;
-            width: 18px;
-            height: 18px;
-            border: 2px solid #000;
+            width: 1.125rem;
+            height: 1.125rem;
+            border: 0.125rem solid #000;
             border-radius: 50%;
             outline: none;
             cursor: pointer;
@@ -67,8 +67,8 @@ export function TestPage() {
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
-            width: 8px;
-            height: 8px;
+            width: 0.5rem;
+            height: 0.5rem;
             border-radius: 50%;
           }
           .progress-tracker-wrapper {
@@ -89,7 +89,7 @@ export function TestPage() {
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
-            font-family: var(--font-heading);
+            font-family: var(--font-body);
             font-size: 0.875rem;
             opacity: 0;
             pointer-events: none;
@@ -99,14 +99,15 @@ export function TestPage() {
             text-align: center;
             background-color: #fff;
             padding: 1rem 0.5rem;
-            border-radius: 999px;
+            border-radius: 62.4375rem;
+            line-height: 1;
           }
           .progress-tracker-wrapper:hover .reset-text {
             opacity: 1;
           }
           @media (min-width: 1100px) {
             .progress-tracker-wrapper {
-              right: calc((100vw - 900px) / 2 + 1rem);
+              right: calc((100dvw - 56.25rem) / 2 + 1rem);
             }
           }
         `}
@@ -147,14 +148,15 @@ export function TestPage() {
             style={{
               marginBottom: '3rem',
               paddingBottom: '2rem',
-              borderBottom: '1px solid #e0e0e0',
+              borderBottom: '0.0625rem solid #e0e0e0',
             }}
           >
             <h2
               style={{
-                fontFamily: 'var(--font-heading)',
+                fontFamily: 'var(--font-body)',
                 fontSize: '1.25rem',
                 marginBottom: '1.5rem',
+                letterSpacing: '-0.05em',
                 textTransform: 'uppercase',
               }}
             >
@@ -170,7 +172,7 @@ export function TestPage() {
                     gap: '0.75rem',
                     cursor: 'pointer',
                     padding: '0.5rem',
-                    borderRadius: '4px',
+                    borderRadius: '0.25rem',
                     transition: 'background-color 0.2s',
                   }}
                   onMouseEnter={(e) => {

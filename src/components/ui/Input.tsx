@@ -13,8 +13,8 @@ export function Input({ label, className, ...props }: InputProps) {
         fontFamily: 'var(--font-body)',
         width: '100%',
         padding: '0.75rem',
-        border: '1px solid #e0e0e0',
-        borderRadius: '4px',
+        border: '0.0625rem solid #e0e0e0',
+        borderRadius: '0.25rem',
         fontSize: '1rem',
       }}
       {...props}

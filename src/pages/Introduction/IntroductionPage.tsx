@@ -5,7 +5,7 @@ export function IntroductionPage() {
   const navigate = useNavigate();
 
   return (
-    <div style={{ padding: '5rem', maxWidth: '1000px', margin: '0 auto' }}>
+    <div style={{ padding: '5rem', maxWidth: '62.5rem', margin: '0 auto' }}>
       <div style={{ fontFamily: 'var(--font-body)', lineHeight: '1.6' }}>
         <h1 style={{ fontFamily: 'var(--font-heading)', marginBottom: '2rem', textTransform: 'uppercase' }}>
           Disclaimer

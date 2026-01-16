@@ -18,7 +18,7 @@ export function Button({
 }: ButtonProps) {
   const baseStyle = {
     fontFamily: 'var(--font-body)',
-    borderRadius: '4px',
+    borderRadius: '0.25rem',
     cursor: disabled ? 'not-allowed' : 'pointer',
     transition: 'all 0.2s',
     opacity: disabled ? 0.5 : 1,
@@ -28,17 +28,17 @@ export function Button({
     primary: {
       backgroundColor: '#000',
       color: '#fff',
-      border: '1px solid #000',
+      border: '0.0625rem solid #000',
     },
     secondary: {
       backgroundColor: '#fff',
       color: '#000',
-      border: '1px solid #000',
+      border: '0.0625rem solid #000',
     },
     outline: {
       backgroundColor: '#fff',
       color: '#000',
-      border: '1px solid #000',
+      border: '0.0625rem solid #000',
     },
   };
 
