@@ -213,9 +213,3 @@
     min-height: 28.125rem;
   }
 }
-
-@media (hover: none) {
-  .captionArea {
-    opacity: 1;;
-  }
-}

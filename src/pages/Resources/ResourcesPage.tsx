@@ -6,6 +6,15 @@ export function ResourcesPage() {
   const navigate = useNavigate();
   return (
     <>
+      <style>
+        {`
+          @media (max-width: 768px) {
+            .resources-section-title {
+              font-size: 1.25rem !important;
+            }
+          }
+        `}
+      </style>
       <div style={{ padding: '2rem', maxWidth: '50rem', margin: '0 auto' }}>
         <blockquote
         style={{
@@ -23,6 +32,7 @@ export function ResourcesPage() {
 
       <section style={{ marginBottom: '1rem' }}>
         <h2
+          className="resources-section-title"
           style={{
             fontFamily: 'var(--font-heading)',
             fontSize: '1.75rem',
@@ -85,6 +95,7 @@ export function ResourcesPage() {
         </div>
       </section>
       <h2
+          className="resources-section-title"
           style={{
             fontFamily: 'var(--font-heading)',
             fontSize: '1.75rem',
@@ -105,6 +116,7 @@ export function ResourcesPage() {
     <div style={{ padding: '2rem', maxWidth: '50rem', margin: '0 auto' }}>
       <section>
         <h2
+          className="resources-section-title"
           style={{
             fontFamily: 'var(--font-heading)',
             fontSize: '1.75rem',

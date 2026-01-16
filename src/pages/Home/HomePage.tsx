@@ -41,7 +41,20 @@ export function HomePage() {
           />
         </div>
       </div>
+      <style>
+        {`
+          @media (max-width: 768px) {
+            .home-title {
+              text-shadow: 0 0 1.25rem #000000 !important;
+            }
+            .home-subtitle {
+              font-size: 1rem !important;
+            }
+          }
+        `}
+      </style>
       <h1
+        className="home-title"
         style={{
           fontFamily: 'var(--font-heading)',
           fontSize: '4rem',
@@ -60,6 +73,7 @@ export function HomePage() {
         You Are Here <br/>
       </h1>
       <h2 
+        className="home-subtitle"
         style={{ 
           fontFamily: 'var(--font-body)', 
           fontSize: '1.75rem', 

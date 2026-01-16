@@ -201,7 +201,18 @@ export function TestPage() {
         ))}
       </div>
 
+      <style>
+        {`
+          @media (max-width: 768px) {
+            .test-navigation {
+              margin-top: 1.5rem !important;
+              padding-top: 1rem !important;
+            }
+          }
+        `}
+      </style>
       <div
+        className="test-navigation"
         style={{
           display: 'flex',
           justifyContent: 'space-between',

@@ -5,11 +5,27 @@ export function IntroductionPage() {
   const navigate = useNavigate();
 
   return (
-    <div style={{ padding: '5rem', maxWidth: '62.5rem', margin: '0 auto' }}>
-      <div style={{ fontFamily: 'var(--font-body)', lineHeight: '1.6' }}>
-        <h1 style={{ fontFamily: 'var(--font-heading)', marginBottom: '2rem', textTransform: 'uppercase' }}>
-          Disclaimer
-        </h1>
+    <>
+      <style>
+        {`
+          @media (max-width: 768px) {
+            .intro-container {
+              padding: 2rem 1rem !important;
+            }
+            .intro-title {
+              font-size: 1.5rem !important;
+            }
+            .intro-content {
+              padding: 0 !important;
+            }
+          }
+        `}
+      </style>
+      <div className="intro-container" style={{ padding: '5rem', maxWidth: '62.5rem', margin: '0 auto' }}>
+        <div className="intro-content" style={{ fontFamily: 'var(--font-body)', lineHeight: '1.6' }}>
+          <h1 className="intro-title" style={{ fontFamily: 'var(--font-heading)', marginBottom: '2rem', textTransform: 'uppercase' }}>
+            Disclaimer
+          </h1>
         <p>
           This test is presented as a work of digital art.
         </p>
@@ -29,5 +45,6 @@ export function IntroductionPage() {
         </div>
       </div>
     </div>
+    </>
   );
 }
