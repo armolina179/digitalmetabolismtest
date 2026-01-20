@@ -23,7 +23,6 @@ export type Stage = {
   id: string;
   roman: string;
   title: string;
-  subtitle?: string;
   position: 'above' | 'below';
   image: string;
   alt: string;
@@ -74,7 +73,7 @@ export function getTechnosphereStages(): Stage[] {
       const trimmedLine = line.trim();
       if (!trimmedLine) continue;
       
-      // More flexible regex to handle any characters in key (though we expect word chars)
+      // More flexible regex to handle any characters in key
       const match = trimmedLine.match(/^([^:]+):\s*(.+)$/);
       if (match) {
         const key = match[1].trim();
@@ -107,7 +106,6 @@ export function getTechnosphereStages(): Stage[] {
       id: metadata.id || '',
       roman: metadata.roman || '',
       title: metadata.title || '',
-      subtitle: metadata.subtitle,
       position: (metadata.position as 'above' | 'below') || 'below',
       image: imageUrl,
       alt: metadata.alt || '',

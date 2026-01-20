@@ -69,7 +69,6 @@ function StageCard({ stage, index, isActive, onActivate, onDeactivate }: StageCa
       id: stage.id,
       title: stage.title,
       roman: stage.roman,
-      subtitle: stage.subtitle,
       position: stage.position,
       image: stage.image,
       imageType: typeof stage.image,
@@ -89,13 +88,13 @@ function StageCard({ stage, index, isActive, onActivate, onDeactivate }: StageCa
       aria-label={`${stage.roman}. ${stage.title}`}
     >
       <div className={styles.grid}>
-        {/* Caption area top - shown when image is below */}
+        {/* Caption area - shown in top position when image is below, bottom position when image is above */}
         <div
-          className={`${styles.captionArea} ${styles.captionTop} ${isActive && !imageAbove ? styles.active : ''}`}
+          className={`${styles.captionArea} ${imageAbove ? styles.captionBottom : styles.captionTop} ${isActive ? styles.active : ''}`}
           id={captionId}
           aria-live="polite"
           style={{
-            pointerEvents: isActive && !imageAbove ? 'auto' : 'none',
+            pointerEvents: isActive ? 'auto' : 'none',
           }}
         >
           <p className={styles.captionText}>{stage.caption}</p>
@@ -122,9 +121,6 @@ function StageCard({ stage, index, isActive, onActivate, onDeactivate }: StageCa
             <span className={styles.roman}>{stage.roman}.</span>
             <span className={styles.title}>{stage.title}</span>
           </div>
-          {stage.subtitle && (
-            <div className={styles.subtitle}>{stage.subtitle}</div>
-          )}
         </div>
 
         {/* Image area bottom - shown when position is below */}
@@ -140,18 +136,6 @@ function StageCard({ stage, index, isActive, onActivate, onDeactivate }: StageCa
             className={styles.image}
             loading="lazy"
           />
-        </div>
-
-        {/* Caption area bottom - shown when image is above */}
-        <div
-          className={`${styles.captionArea} ${styles.captionBottom} ${isActive && imageAbove ? styles.active : ''}`}
-          id={imageAbove ? captionId : undefined}
-          aria-live="polite"
-          style={{
-            pointerEvents: isActive && imageAbove ? 'auto' : 'none',
-          }}
-        >
-          <p className={styles.captionText}>{stage.caption}</p>
         </div>
       </div>
     </div>

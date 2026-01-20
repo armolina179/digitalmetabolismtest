@@ -16,7 +16,6 @@ export function ResourcesPage() {
             .button {
               font-size: 1rem !important;
               padding: 0.5rem 1rem !important;
-              width: 100% !important;
             }
           }
         `}
@@ -70,7 +69,7 @@ export function ResourcesPage() {
             >
               digital–environmental metabolism
             </a>
-            , is a term that describes how digital technologies (phones, computers, networked devices, and the internet) are embedded within physical, ecological, and human systems. Rather than existing apart from the material world, digital systems function through exchanges of energy and resources that resemble metabolic processes of living organisms. As we continue to expand the{' '}
+            , is a term that describes how digital technologies (phones, computers, networked devices, and the internet) are embedded within physical, ecological, and human systems. Digital systems are woven into the material world, functioning through exchanges of energy and resources that resemble metabolic processes of living organisms. As we continue to expand the{' '}
             <a
               href="https://anthropocene.univie.ac.at/resources/technosphere/"
               target="_blank"
@@ -96,7 +95,7 @@ export function ResourcesPage() {
             Every digital action (messaging, streaming, shopping, etc.) is supported by vast physical infrastructures: data centers, servers, cables, and devices that consume energy and generate waste. These systems are fed by resources extracted from the earth; metals mined from the ground, chemicals used in processing, and electricity required to sustain constant operation. And they produce waste in return; electronic waste, chemical pollution, and carbon emissions. Digital systems, like bodies, require continual input to function and leave material traces behind.
           </p>
           <p>
-            Equally embedded in this metabolism is human labor. The materials that enable digital life are extracted, refined, and assembled through physically demanding and often hazardous work, exposing miners and factory laborers to toxic substances and long-term health risks. Digital metabolism highlights how digital culture is inseparable from natural systems, human bodies, and planetary ecosystems, inviting a reconsideration of technological practices toward more environmentally aware and ethically grounded futures.
+            Equally embedded in this metabolism is human labor. The materials that enable digital life are extracted, refined, and assembled through physically demanding and often hazardous work, exposing miners and factory laborers to toxic substances and long-term health risks. Digital metabolism highlights how digital culture is inseparable from human bodies and our shared environment, inviting a reconsideration of technological practices toward more environmentally aware and ethically grounded futures.
           </p>
         </div>
       </section>
@@ -141,10 +140,9 @@ export function ResourcesPage() {
         </h2>
         <div style={{ fontFamily: 'var(--font-body)', lineHeight: '1.6' }}>
           <p style={{ marginBottom: '1.5rem' }}>
-            The Digital Metabolism Test is an interactive experience designed to make these connections visible. It invites participants to reflect on how their everyday digital habits connect to larger systems of infrastructure, energy, labor, and material extraction.
-          </p>
-          <p>
-            Rather than offering right or wrong answers, the test encourages curiosity and awareness, asking participants to consider their place within a shared digital ecosystem. You are here.
+          The test is an experiment in making these connections visible. It asks: where do you fit within this system? What role do your habits, choices, and digital behaviors play in these larger flows of energy, materials, and labor?
+          <br></br><br></br>
+            There are no right or wrong answers, just an invitation to locate yourself. You are here. So where is "here," exactly?
           </p>
         </div>
         <div style={{ display: 'flex', justifyContent: 'space-between', marginTop: '2rem'}}>
