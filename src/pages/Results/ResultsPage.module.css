@@ -1,0 +1,186 @@
+.page {
+  padding: 2rem;
+  max-width: 50rem;
+  margin: 0 auto;
+}
+
+.pageTitle {
+  font-family: var(--font-heading);
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+}
+
+.titleHighlight {
+  display: block;
+  margin-top: 1rem;
+  padding: 0.25em 0.5em;
+  border: 2px solid #000;
+  border-radius: 0.5rem;
+  width: fit-content;
+  background-color: #0000ff;
+  color: #fff;
+}
+
+.body {
+  font-family: var(--font-body);
+  line-height: 1.6;
+  margin-bottom: 2rem;
+}
+
+.videoWrap {
+  margin-bottom: 3rem;
+}
+
+.video {
+  width: 75%;
+  max-width: 100%;
+  height: auto;
+  display: block;
+  align-self: center;
+  justify-self: center;
+  border: 2px solid #000;
+  border-radius: 0.5rem;
+}
+
+.section {
+  margin-bottom: 3rem;
+}
+
+.sectionTitle {
+  font-family: var(--font-heading);
+  margin-bottom: 0.5rem;
+  text-transform: uppercase;
+  font-size: 1.25rem;
+}
+
+.dropdown {
+  border-bottom: 1px solid #ccc;
+}
+
+.dropdown:last-child {
+  border-bottom: none;
+}
+
+.dropdownSummary {
+  font-family: var(--font-heading);
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  padding: 0.75rem 0;
+  cursor: pointer;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.dropdownSummary::-webkit-details-marker {
+  display: none;
+}
+
+.dropdownSummary::after {
+  content: '⯌';
+  font-size: 1.5rem;
+  flex-shrink: 0;
+  transition: transform 0.2s ease-in-out;
+}
+
+.dropdownSummary:hover {
+  color: #0000ff;
+}
+
+.dropdownSummary:hover::after {
+  color: #0000ff;
+}
+
+.dropdown[open] .dropdownSummary::after {
+  content: '⯍';
+  transform: rotate(45deg);
+  transition: transform 0.2s ease-in-out;
+}
+
+.dropdown .body {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  padding-left: 1.5rem;
+}
+
+.sectionTitleLarge {
+  font-family: var(--font-heading);
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+}
+
+.principlesVideoRow {
+  display: flex;
+  gap: 1.5rem;
+  margin-bottom: 3rem;
+  align-items: center;
+}
+
+.principlesVideoRow .videoWrap {
+  margin-bottom: 0;
+  flex: 1 1 0;
+  min-width: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.principles {
+  font-family: var(--font-body);
+  line-height: 1.6;
+  flex: 0 1 min(300px, 40%);
+}
+
+.principle {
+  margin-bottom: 1rem;
+}
+
+.principlesVideoRow .principle:last-child {
+  margin-bottom: 0;
+}
+
+@media (max-width: 768px) {
+  .principlesVideoRow {
+    flex-direction: column;
+  }
+
+  .principlesVideoRow .principles {
+    flex: none;
+    order: 2;
+  }
+
+  .principlesVideoRow .videoWrap {
+    order: 1;
+  }
+
+}
+
+.closing {
+  font-family: var(--font-body);
+  line-height: 1.6;
+  margin-bottom: 3rem;
+  font-style: italic;
+}
+
+.nav {
+  font-family: var(--font-body);
+  margin-bottom: 2rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid #ccc;
+}
+
+.navLinks {
+  display: flex;
+  justify-content: space-between;
+  gap: 10rem;
+}
+
+.navButton {
+  flex: 1;
+}
+
+.navLink {
+  color: inherit;
+  text-decoration: underline;
+}
