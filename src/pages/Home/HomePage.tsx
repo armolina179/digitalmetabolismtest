@@ -48,7 +48,7 @@ export function HomePage() {
               text-shadow: 0 0 1.25rem #000000 !important;
             }
             .home-subtitle {
-              font-size: 1rem !important;
+              font-size: 1.25rem !important;
             }
           }
         `}
@@ -77,7 +77,7 @@ export function HomePage() {
         style={{ 
           fontFamily: 'var(--font-body)', 
           marginTop: '0.5rem',
-          fontSize: '2rem', 
+          fontSize: '1.75rem', 
           marginBottom: '1rem', 
           fontWeight: 'normal', 
           letterSpacing: '-0.05em', 

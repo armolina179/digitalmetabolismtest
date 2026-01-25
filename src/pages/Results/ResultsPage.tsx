@@ -40,21 +40,21 @@ export function ResultsPage() {
         <details className={styles.dropdown}>
           <summary className={styles.dropdownSummary}>A. Origins</summary>
           <p className={styles.body}>
-            Materials drawn from the earth (metals, minerals, and chemical compounds) are extracted, refined, and transported through global supply chains. These origins remain present, even as devices feel seamless or immaterial. To use digital technology is to remain connected to these beginnings through energy, infrastructure, and labor.
+            Materials drawn from the earth (metals, minerals, and chemical compounds) are extracted, refined, and transported through global supply chains. These origins remain present, even as devices feel seamless or immaterial. To use digital technology is to remain connected to these beginnings through energy, infrastructure, and labor. Your digital life is dependent on these beginnings.
           </p>
         </details>
 
         <details className={styles.dropdown}>
           <summary className={styles.dropdownSummary}>B. Data</summary>
-          <p className={styles.body}>
-            Information circulates through physical systems; servers, cables, data centers, and transfer stations, sustained by energy and constant maintenance. Every interaction leaves a trace within this flow, situating your digital actions within a continuous exchange rather than a distant abstraction.
+          <p className={styles.body}> 
+            Information circulates through physical systems; servers, cables, data centers, and transfer stations, sustained by energy and constant maintenance. Every interaction leaves a trace within this flow, situating your digital actions within a continuous exchange of real energy and material rather than a distant abstraction.
           </p>
         </details>
 
         <details className={styles.dropdown}>
           <summary className={styles.dropdownSummary}>C. Afterlives</summary>
           <p className={styles.body}>
-            Devices do not disappear when they are replaced or discarded. They continue on as electronic waste, often traveling elsewhere to be dismantled and recycled, or more often than not, left to accumulate. These afterlives link moments of use to extended material timelines that affect environments and human bodies.
+            Devices do not disappear when they are replaced or discarded. They continue on as electronic waste, often traveling elsewhere to be dismantled and recycled, or more often than not, left to accumulate and leech pollution into the environment. These afterlives link moments of use to extended material timelines that affect environments and human bodies.
           </p>
         </details>
 
@@ -71,7 +71,7 @@ export function ResultsPage() {
           Reflecting on Your Digital Metabolism
         </h2>
         <p className={styles.body}>
-          Inspired by principles of permaculture, your digital metabolism can be understood through relationships of care. Care for the earth, care for people, and care for shared resources. These ethics offer ways of noticing how your digital practices intersect with ecological and human systems.
+          Inspired by principles of permaculture, your digital metabolism can be understood through relationships of care. Care for the earth, care for people, and care for shared resources. These ethics offer new ways of paying attention to how your digital practices intersect with ecological and human systems.
         </p>
 
         <div className={styles.principlesVideoRow}>
