@@ -32,7 +32,7 @@ export function ResourcesPage() {
           borderLeft: 'none',
         }}
       >
-        We must begin to tell new stories that illustrate our Anthropocenic togetherness. In our blind adoption of techno-reproduction as the apex of human progeess, we have sentenced ourselves to lives lived with those technologies and the implications of their geophysical wastes.<br></br> - Amanda Starling Gould
+        We must begin to tell new stories that illustrate our Anthropocenic togetherness. In our blind adoption of techno-reproduction as the apex of human progress, we have sentenced ourselves to lives lived with those technologies and the implications of their geophysical wastes.<br></br> - Amanda Starling Gould
       </blockquote>
 
       <section style={{ marginBottom: '1rem' }}>
