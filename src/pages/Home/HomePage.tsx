@@ -23,9 +23,9 @@ export function HomePage() {
 
       <div className={styles.hero}>
         <h1 className={styles.title}>You</h1>
-        <h1 className={styles.titleCenter}>Are</h1>
+        <h1 className={styles.title}>Are</h1>
         <div className={styles.right}>
-          <h1 className={styles.titleRight}>Here:</h1>
+          <h1 className={styles.title}>Here:</h1>
           <h2 className={styles.subtitle}>
             Locating Yourself in <br /> the Digital Metabolism
           </h2>

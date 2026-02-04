@@ -46,8 +46,7 @@
   }
 }
 
-/* Shared text style for titles and subtitle */
-.text {
+.title {
   font-family: var(--font-body);
   font-size: 1rem;
   font-weight: normal;
@@ -55,22 +54,6 @@
   color: #ffffff;
   position: relative;
   z-index: 1;
-}
-
-.title {
-  composes: text;
-  text-align: left;
-  margin: 0;
-}
-
-.titleCenter {
-  composes: text;
-  text-align: left;
-  margin: 0;
-}
-
-.titleRight {
-  composes: text;
   text-align: left;
   margin: 0;
 }
@@ -85,8 +68,13 @@
 }
 
 .subtitle {
-  composes: text;
-  margin: 0;
+  font-family: var(--font-body);
+  font-size: 1rem;
+  font-weight: normal;
+  text-transform: uppercase;
+  color: #ffffff;
+  position: relative;
+  z-index: 1;
   margin-bottom: 3dvh;
 }
 
