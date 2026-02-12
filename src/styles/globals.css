@@ -52,7 +52,7 @@
 
 body {
   font-family: var(--font-body);
-  background-color: rgb(180, 180, 180);
+  background-color: rgb(182, 182, 182);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
