@@ -1,6 +1,6 @@
 .page {
   padding: 2rem;
-  max-width: 50rem;
+  max-width: 60rem;
   margin: 0 auto;
 }
 
@@ -11,14 +11,7 @@
 }
 
 .titleHighlight {
-  display: block;
-  margin-top: 1rem;
-  padding: 0.25em 0.5em;
-  border: 2px solid #000;
-  border-radius: 0.5rem;
-  width: fit-content;
-  background-color: #0000ff;
-  color: #fff;
+  font-weight: bold;
 }
 
 .body {
@@ -28,11 +21,11 @@
 }
 
 .videoWrap {
-  margin-bottom: 3rem;
+  margin: 3rem;
 }
 
 .video {
-  width: 75%;
+  width: 60%;
   max-width: 100%;
   height: auto;
   display: block;
@@ -78,7 +71,7 @@
 }
 
 .dropdownSummary::after {
-  content: '⯌';
+  content: '✦';
   font-size: 1.5rem;
   flex-shrink: 0;
   transition: transform 0.2s ease-in-out;
@@ -93,7 +86,7 @@
 }
 
 .dropdown[open] .dropdownSummary::after {
-  content: '⯍';
+  content: '✦';
   transform: rotate(45deg);
   transition: transform 0.2s ease-in-out;
 }

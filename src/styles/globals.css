@@ -41,6 +41,7 @@
 :root {
   --font-heading: 'Archivo Black', sans-serif;
   --font-body: 'Space Mono', monospace;
+  --button-light-bg: #cecece;
 }
 
 * {
@@ -51,8 +52,15 @@
 
 body {
   font-family: var(--font-body);
+  background-color: rgb(180, 180, 180);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+body.results-page,
+body.results-page #root {
+  background-color: #e1e1e1;
+  --button-light-bg: #e1e1e1;
 }
 
 h1, h2, h3, h4, h5, h6 {

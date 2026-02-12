@@ -27,16 +27,16 @@ export function Button({
   const variantStyles = {
     primary: {
       backgroundColor: '#000',
-      color: '#fff',
+      color: 'var(--button-light-bg, #cecece)',
       border: '0.0625rem solid #000',
     },
     secondary: {
-      backgroundColor: '#fff',
+      backgroundColor: 'var(--button-light-bg, #cecece)',
       color: '#000',
       border: '0.0625rem solid #000',
     },
     outline: {
-      backgroundColor: '#fff',
+      backgroundColor: 'var(--button-light-bg, #cecece)',
       color: '#000',
       border: '0.0625rem solid #000',
     },
@@ -62,18 +62,18 @@ export function Button({
       <style>
         {`
           .button.button-primary:hover:not(:disabled) {
-            background-color: #fff !important;
+            background-color: var(--button-light-bg, #cecece) !important;
             color: #000 !important;
             border-color: #000 !important;
           }
           .button.button-secondary:hover:not(:disabled) {
             background-color: #000 !important;
-            color: #fff !important;
+            color: var(--button-light-bg, #cecece) !important;
             border-color: #000 !important;
           }
           .button.button-outline:hover:not(:disabled) {
             background-color: #000 !important;
-            color: #fff !important;
+            color: var(--button-light-bg, #cecece) !important;
             border-color: #000 !important;
           }
         `}

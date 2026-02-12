@@ -1,120 +1,169 @@
-/* Page layout */
 .page {
+  --home-font-size: 1rem;
   min-height: 100dvh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-start;
-  padding: 2rem;
+  width: 100%;
   position: relative;
+  overflow: hidden;
 }
 
-/* Background */
 .background {
   position: fixed;
-  top: 0;
-  left: 0;
-  width: 100dvw;
-  height: 100dvh;
+  inset: 0;
   z-index: 0;
-  overflow: hidden;
-  background-color: #000066;
-}
-
-.backgroundInner {
-  width: 100%;
-  height: 100%;
-}
-
-/* Hero: title grid */
-.hero {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  width: 100%;
-  max-width: 100%;
-  padding-left: 2rem;
-  padding-right: 2rem;
-  position: relative;
-  z-index: 1;
-  gap: 0 1rem;
+  place-items: center;
+  overflow: hidden;
+  pointer-events: none;
 }
 
-@media (max-width: 768px) {
-  .hero {
-    padding-left: 1rem;
-    padding-right: 1rem;
-  }
+.backgroundVideo {
+  width: min(100dvw, 1280px);
+  max-width: 1280px;
+  height: auto;
+  max-height: min(100dvh, 720px);
+  aspect-ratio: 16 / 9;
+  object-fit: contain;
+  display: block;
+  transition: filter 0.24s ease;
+}
+
+.backgroundHueShift .backgroundVideo {
+  filter: hue-rotate(15deg);
+}
+
+.videoLoading {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  place-items: center;
+}
+
+.topLeft {
+  position: fixed;
+  top: 1.5rem;
+  right: 1.5rem;
+  z-index: 1;
+  width: min(90vw, 18rem);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
 }
 
 .title {
-  font-family: var(--font-body);
-  font-size: 1rem;
-  font-weight: normal;
-  text-transform: uppercase;
-  color: #ffffff;
-  position: relative;
-  z-index: 1;
-  text-align: left;
   margin: 0;
-}
-
-/* Right column: Here + subtitle + buttons */
-.right {
+  width: 75%;
   display: flex;
   flex-direction: column;
   align-items: stretch;
-  gap: 1.25rem;
-  text-align: left;
+  font-family: var(--font-body);
+  font-size: var(--home-font-size);
+  font-weight: 700;
+  color: #111111;
+  text-transform: uppercase;
+  text-align: right;
+  padding-bottom: 0.75rem;
+}
+
+.titleRow {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
 }
 
 .subtitle {
-  font-family: var(--font-body);
-  font-size: 1rem;
-  font-weight: normal;
-  text-transform: uppercase;
-  color: #ffffff;
-  position: relative;
-  z-index: 1;
-  margin-bottom: 3dvh;
+  display: block;
+  margin-left: auto;
 }
 
-.buttonRow {
-  display: flex;
-  gap: 1rem;
-  flex-wrap: wrap;
+.hereText {
+  cursor: pointer;
+  text-decoration: none;
+  text-underline-offset: 0.2em;
+  transition: 0.3s ease;
+}
+
+.hereText:hover,
+.hereText:focus-visible {
+  letter-spacing: 0.5em;
+  color: rgb(0, 0, 255);
+  font-weight: 900;
+  transition: 0.3s ease;
 }
 
 .navButton {
-  padding-left: 1rem;
-  padding-right: 1rem;
-  width: 10rem;
-  box-sizing: border-box;
-}
-
-/* Footer */
-.footer {
-  position: absolute;
-  bottom: 1rem;
-  left: 1rem;
-  z-index: 1;
-}
-
-.footerLink {
+  min-width: 10rem;
+  padding: 0.25rem 0;
+  border: none;
+  background-color: transparent;
+  color: #111111;
   font-family: var(--font-body);
+  font-size: var(--home-font-size);
+  text-align: right;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+.navButton:hover,
+.navButton:focus-visible {
+  transform: translateX(-0.125rem);
+  color: rgb(0, 0, 255);
+  font-weight: bold;
+  transition: 0.3s ease;
+}
+
+.portfolioLink {
+  position: fixed;
+  left: 1.5rem;
+  bottom: 1.5rem;
+  z-index: 1;
+  display: inline-block;
+  font-family: var(--font-heading);
   font-size: 0.875rem;
-  padding: 0.25rem 1rem;
-  border: 0.0625rem solid #fff;
-  border-radius: 0.25rem;
-  background-color: #000000;
+  line-height: 1;
+  padding: 0.55rem 1rem;
+  border: 0.0625rem solid #111111;
+  border-radius: 9999px;
+  background-color: rgb(0, 0, 255);
   color: #fff;
   text-decoration: none;
-  display: inline-block;
-  cursor: pointer;
-  transition: all 0.2s;
   text-transform: uppercase;
+  cursor: pointer;
+  transition: background-color 0.2s ease, transform 0.2s ease;
 }
 
-.footerLink:hover {
-  background-color: #fff;
-  color: #000;
+.homeLoading {
+  font-size: var(--home-font-size) !important;
+}
+
+.portfolioLink:hover {
+  filter: hue-rotate(60deg);
+  transform: translateY(-0.0625rem);
+  transition: filter 0.3s ease, transform 0.3s ease;
+}
+
+@media (max-width: 768px) {
+  .topLeft {
+    top: 1rem;
+    right: 1rem;
+  }
+
+  .bottomRight {
+    right: 1rem;
+    bottom: 2.85rem;
+  }
+
+  .learnMoreButton {
+    right: 1rem;
+    bottom: 1rem;
+  }
+
+  .portfolioLink {
+    left: 1rem;
+    bottom: 1rem;
+  }
+
+  .navButton {
+    min-width: 9rem;
+  }
 }

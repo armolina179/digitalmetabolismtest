@@ -29,7 +29,7 @@ export function CircularProgress({
         display: 'flex',
         alignItems: 'center',
         justifyContent: 'center',
-        backgroundColor: '#fff',
+        backgroundColor: '#b3b3b3',
         borderRadius: '62.4375rem',
         padding: '1rem 0.5rem',
         transition: 'all 0.2s ease',

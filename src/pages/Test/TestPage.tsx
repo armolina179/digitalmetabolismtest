@@ -97,7 +97,7 @@ export function TestPage() {
             z-index: 2;
             text-transform: uppercase;
             text-align: center;
-            background-color: #fff;
+            background-color: #b3b3b3;
             padding: 1rem 0.5rem;
             border-radius: 62.4375rem;
             line-height: 1;
@@ -148,7 +148,7 @@ export function TestPage() {
             style={{
               marginBottom: '3rem',
               paddingBottom: '2rem',
-              borderBottom: '0.0625rem solid #e0e0e0',
+              borderBottom: '0.0625rem solid #111',
             }}
           >
             <h2
@@ -176,7 +176,7 @@ export function TestPage() {
                     transition: 'background-color 0.2s',
                   }}
                   onMouseEnter={(e) => {
-                    e.currentTarget.style.backgroundColor = '#f5f5f5';
+                    e.currentTarget.style.backgroundColor = '#cecece';
                   }}
                   onMouseLeave={(e) => {
                     e.currentTarget.style.backgroundColor = 'transparent';
@@ -189,7 +189,7 @@ export function TestPage() {
                     checked={answers[question.id] === answer.id}
                     onChange={() => handleAnswerChange(question.id, answer.id)}
                     style={{
-                      marginTop: '0.35rem',
+                      marginTop: '0.20rem',
                       cursor: 'pointer',
                     }}
                   />

@@ -55,7 +55,7 @@ export function ResourcesPage() {
               target="_blank"
               rel="noopener noreferrer"
               style={{
-                color: '#000',
+                color: 'rgb(0, 0, 0)',
                 textDecoration: 'underline',
                 textDecorationThickness: '0.0625rem',
                 textUnderlineOffset: '0.125rem',
@@ -113,8 +113,8 @@ export function ResourcesPage() {
           The Technosphere
         </h2>
         <div style={{ fontFamily: 'var(--font-body)', lineHeight: '1.6', fontSize: '0.875rem'}}>
-          <p style={{ marginBottom: '1.5rem', textAlign: 'right', color: '#808080', fontStyle: 'italic' }}>
-            (Hover over the images to see the extended captions) <br/>(Scroll down to see the full collage)
+          <p style={{ marginBottom: '1.5rem', textAlign: 'right', color: '#505050', fontStyle: 'italic' }}>
+            (Hover over the images to see the extended captions) <br/>
           </p>
         </div>
       </section>

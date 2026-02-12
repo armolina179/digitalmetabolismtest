@@ -1,9 +1,17 @@
+import { useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { Button } from '../../components/ui/Button';
 import styles from './ResultsPage.module.css';
 
 export function ResultsPage() {
   const navigate = useNavigate();
+
+  useEffect(() => {
+    document.body.classList.add('results-page');
+    return () => {
+      document.body.classList.remove('results-page');
+    };
+  }, []);
 
   return (
     <div className={styles.page}>
@@ -15,15 +23,8 @@ export function ResultsPage() {
       </nav>
 
       <h1 className={styles.pageTitle}>
-        Result:
-        <br />
-        <span className={styles.titleHighlight}>You Are Here</span>
-      </h1>
-      <p className={styles.body}>
-        To be "here" is to exist alongside overlapping flows of material, energy, labor, and culture. Your digital life unfolds in relation to these systems, moving with them, shaping them, and being shaped in return. This moment marks a point of orientation. 
-      </p>
-
-      <div className={styles.videoWrap}>
+        Results:
+        <div className={styles.videoWrap}>
         <video
           className={styles.video}
           src="https://res.cloudinary.com/drms0y8jz/video/upload/v1769238376/youarehere_ioqc1k.mp4"
@@ -35,6 +36,10 @@ export function ResultsPage() {
           Your browser does not support the video tag.
         </video>
       </div>
+      </h1>
+      <p className={styles.body}>
+        <span className={styles.titleHighlight}>You are here.</span> To be "here" is to exist alongside overlapping flows of material, energy, labor, and culture. Your digital life unfolds in relation to these systems, moving with them, shaping them, and being shaped in return. This moment marks a point of orientation. 
+      </p>
 
       <section className={styles.section}>
         <details className={styles.dropdown}>
