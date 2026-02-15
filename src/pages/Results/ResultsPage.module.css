@@ -21,18 +21,21 @@
 }
 
 .videoWrap {
-  margin: 3rem;
+  margin: 3rem auto;
+  width: min(100%, 56rem);
+  padding-inline: min(3dvw, 1rem);
+  box-sizing: border-box;
 }
 
 .video {
-  width: 60%;
-  max-width: 100%;
+  width: 100%;
+  max-width: 36rem;
   height: auto;
   display: block;
-  align-self: center;
-  justify-self: center;
-  border: 2px solid #000;
+  margin-inline: auto;
+  border: 0.125rem solid #000;
   border-radius: 0.5rem;
+  box-sizing: border-box;
 }
 
 .section {
@@ -47,7 +50,7 @@
 }
 
 .dropdown {
-  border-bottom: 1px solid #ccc;
+  border-bottom: 0.0625rem solid #ccc;
 }
 
 .dropdown:last-child {
@@ -114,6 +117,8 @@
 .principlesVideoRow .videoWrap {
   margin-bottom: 0;
   flex: 1 1 0;
+  width: 100%;
+  max-width: 36rem;
   min-width: 0;
   display: flex;
   justify-content: center;
@@ -122,7 +127,7 @@
 .principles {
   font-family: var(--font-body);
   line-height: 1.6;
-  flex: 0 1 min(300px, 40%);
+  flex: 0 1 min(18.75rem, 40%);
 }
 
 .principle {
@@ -133,9 +138,22 @@
   margin-bottom: 0;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 48rem) {
+  .videoWrap {
+    margin: 2rem auto;
+    width: 100%;
+    max-width: 30rem;
+    padding-inline: 0;
+  }
+
+  .video {
+    max-width: 100%;
+  }
+
   .principlesVideoRow {
     flex-direction: column;
+    margin-bottom: 2rem;
+    gap: 1rem;
   }
 
   .principlesVideoRow .principles {
@@ -145,6 +163,7 @@
 
   .principlesVideoRow .videoWrap {
     order: 1;
+    max-width: 30rem;
   }
 
 }
@@ -160,7 +179,7 @@
   font-family: var(--font-body);
   margin-bottom: 2rem;
   padding-bottom: 1.5rem;
-  border-bottom: 1px solid #ccc;
+  border-bottom: 0.0625rem solid #ccc;
 }
 
 .navLinks {
@@ -176,4 +195,18 @@
 .navLink {
   color: inherit;
   text-decoration: underline;
+}
+
+@media (max-width: 37.5rem) {
+  .page {
+    padding: 1.25rem min(5dvw, 1.5rem);
+  }
+
+  .navLinks {
+    gap: 1rem;
+  }
+
+  .dropdownSummary {
+    font-size: 1.25rem;
+  }
 }
